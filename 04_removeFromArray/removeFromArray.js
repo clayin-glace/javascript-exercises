@@ -1,10 +1,9 @@
-const removeFromArray = function(array, ...itemsToRemove) {
-
-  for (removal of itemsToRemove) {
-    for (item of array) {
-      if (item === removal) {
-        item.array = array.splice(array.indexOf(item), 1);
-        console.log(array);
+const removeFromArray = function(array, ...itemsToRemove) { //handles multiple parameter lengths for itemsToRemove
+  for (removal of itemsToRemove) { //for each item to remove
+    for (item of array) { //for each item in the array
+      if (item === removal) { //check if item needs to be removed
+        item.array = array.splice(array.indexOf(item), 1); //remove that item
+        //console.log(array);
       }
     }
   }
